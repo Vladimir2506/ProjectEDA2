@@ -1,0 +1,430 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Dec 28 17:17:54 2017
+# Process ID: 10776
+# Current directory: E:/VIVAPRJ/EDAProject2/EDAProject2.runs/synth_1
+# Command line: vivado.exe -log InputProc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source InputProc.tcl
+# Log file: E:/VIVAPRJ/EDAProject2/EDAProject2.runs/synth_1/InputProc.vds
+# Journal file: E:/VIVAPRJ/EDAProject2/EDAProject2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source InputProc.tcl -notrace
+Command: synth_design -top InputProc -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2016 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 353.641 ; gain = 83.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'InputProc' [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/sources_1/new/InputProc.v:23]
+	Parameter pIdle bound to: 0 - type: integer 
+	Parameter pCol0 bound to: 1 - type: integer 
+	Parameter pCol1 bound to: 2 - type: integer 
+	Parameter pCol2 bound to: 3 - type: integer 
+	Parameter pCol3 bound to: 4 - type: integer 
+	Parameter pPush bound to: 5 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/sources_1/new/InputProc.v:68]
+WARNING: [Synth 8-567] referenced signal 'wRow' should be on the sensitivity list [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/sources_1/new/InputProc.v:66]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/sources_1/new/InputProc.v:88]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/sources_1/new/InputProc.v:114]
+WARNING: [Synth 8-5788] Register rColVal_reg in module InputProc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/sources_1/new/InputProc.v:100]
+WARNING: [Synth 8-5788] Register rRowVal_reg in module InputProc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/sources_1/new/InputProc.v:101]
+INFO: [Synth 8-256] done synthesizing module 'InputProc' (1#1) [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/sources_1/new/InputProc.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 403.211 ; gain = 133.105
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 403.211 ; gain = 133.105
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc]
+WARNING: [Vivado 12-584] No ports matched 'wCols[3]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wCols[2]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wCols[1]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wCols[0]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wDatas[7]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wDatas[6]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wDatas[5]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wDatas[4]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wDatas[3]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wDatas[2]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wDatas[1]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wDatas[0]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wEnables[3]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wEnables[2]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wEnables[1]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wEnables[0]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wRows[3]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wRows[2]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wRows[1]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wRows[0]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wClockAll'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wResetAll'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wResetAll'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wClockAll'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wCols[0]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wCols[1]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wCols[2]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wCols[3]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wRows[3]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wRows[2]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wRows[1]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wRows[0]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wDatas[7]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wDatas[6]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wDatas[5]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wDatas[4]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wDatas[3]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wDatas[2]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wDatas[1]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wDatas[0]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wEnables[3]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wEnables[2]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wEnables[1]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'wEnables[0]'. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/constrs_1/new/Main.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 703.918 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 703.918 ; gain = 433.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 703.918 ; gain = 433.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 703.918 ; gain = 433.813
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "rNext0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rNext0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rNext0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rNext0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "rVal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rNext0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rNext0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'rNext_reg' [E:/VIVAPRJ/EDAProject2/EDAProject2.srcs/sources_1/new/InputProc.v:69]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 703.918 ; gain = 433.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   7 Input      4 Bit        Muxes := 1     
+	  18 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 4     
+	  18 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module InputProc 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   7 Input      4 Bit        Muxes := 1     
+	  18 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 4     
+	  18 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 703.918 ; gain = 433.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 710.879 ; gain = 440.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 710.879 ; gain = 440.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 730.441 ; gain = 460.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 730.441 ; gain = 460.336
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 730.441 ; gain = 460.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 730.441 ; gain = 460.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 730.441 ; gain = 460.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 730.441 ; gain = 460.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 730.441 ; gain = 460.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |     5|
+|4     |LUT3 |     1|
+|5     |LUT4 |     6|
+|6     |LUT5 |     2|
+|7     |LUT6 |     5|
+|8     |FDCE |     6|
+|9     |FDPE |     6|
+|10    |FDRE |     8|
+|11    |LD   |     3|
+|12    |IBUF |     6|
+|13    |OBUF |     8|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    58|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 730.441 ; gain = 460.336
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 730.441 ; gain = 159.629
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 730.441 ; gain = 460.336
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  LD => LDCE: 3 instances
+
+22 Infos, 48 Warnings, 44 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 732.590 ; gain = 469.695
+INFO: [Common 17-1381] The checkpoint 'E:/VIVAPRJ/EDAProject2/EDAProject2.runs/synth_1/InputProc.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 732.590 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 28 17:18:27 2017...

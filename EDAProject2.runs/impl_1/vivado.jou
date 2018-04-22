@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Dec 28 17:18:33 2017
+# Process ID: 2212
+# Current directory: E:/VIVAPRJ/EDAProject2/EDAProject2.runs/impl_1
+# Command line: vivado.exe -log InputProc.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source InputProc.tcl -notrace
+# Log file: E:/VIVAPRJ/EDAProject2/EDAProject2.runs/impl_1/InputProc.vdi
+# Journal file: E:/VIVAPRJ/EDAProject2/EDAProject2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source InputProc.tcl -notrace

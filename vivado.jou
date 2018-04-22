@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Dec 28 17:14:55 2017
+# Process ID: 2976
+# Current directory: E:/VIVAPRJ/EDAProject2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3500 E:\VIVAPRJ\EDAProject2\EDAProject2.xpr
+# Log file: E:/VIVAPRJ/EDAProject2/vivado.log
+# Journal file: E:/VIVAPRJ/EDAProject2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/VIVAPRJ/EDAProject2/EDAProject2.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top InputProc [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top InputProcTestBench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_simulation -mode post-implementation -type timing
+source InputProcTestBench.tcl
+run 1 s
+save_wave_config {E:/VIVAPRJ/EDAProject2/InputProcTestBench_time_impl.wcfg}
+close_sim
